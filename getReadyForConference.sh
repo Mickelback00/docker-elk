@@ -4,6 +4,15 @@ set -e
 
 RUN_DOCKER="${RUN_DOCKER:-yes}"
 
+export SERVICE1_PORT=7061
+export SERVICE1_ADDRESS="localhost:${SERVICE1_PORT}"
+export SERVICE2_PORT=7062
+export SERVICE2_ADDRESS="localhost:${SERVICE2_PORT}"
+export SERVICE3_PORT=7063
+export SERVICE3_ADDRESS="localhost:${SERVICE3_PORT}"
+export SERVICE4_PORT=7064
+export SERVICE4_ADDRESS="localhost:${SERVICE4_PORT}"
+
 function print_logs() {
     echo -e "\n\nSOMETHING WENT WRONG :( :( \n\n"
     echo -e "\n\nPRINTING LOGS FROM ALL APPS\n\n"
